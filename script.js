@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const fileType = file.type;
 
                 if (fileType === 'application/pdf') {
-                    fileDisplayArea.innerHTML = `<embed src="${result}" width="100%" height="600px" type="application/pdf">`;
+                    fileDisplayArea.innerHTML = `<embed src="${result}" width="100%" height="400px" type="application/pdf">`;
                 } else if (fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || fileType === 'text/plain') {
-                    fileDisplayArea.innerHTML = `<textarea style="width: 100%; height: 600px;">${result}</textarea>`;
+                    fileDisplayArea.innerHTML = `<textarea style="width: 100%; height: 400px;">${result}</textarea>`;
                 } else {
                     fileDisplayArea.innerHTML = 'Unsupported file type';
                 }
